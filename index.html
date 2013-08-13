@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <style type="text/css">
@@ -34,7 +36,7 @@
   </head>
   <body>
     
-    <a id="trigger" href="#sidr">Side menu</a>
+    <a id="trigger" href="#">Side menu</a>
 
     <div id="sidemenu">
       <ul>
@@ -48,7 +50,7 @@
     <script>
       $('#trigger').click(function() {
         var sidemenu = $('#sidemenu');
-        
+
         if (sidemenu.css('left') == '-250px') {
           sidemenu.animate({
             left: "+=250"
